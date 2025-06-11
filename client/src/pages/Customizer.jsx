@@ -57,7 +57,7 @@ const Customizer = () => {
       //call our backend to generate an image
       setGeneratingImg(true);
 
-      const response = await axios.post('http://localhost:8080/api/v1/dalle',
+      const response = await axios.post('https://shirt-design-ehnm.onrender.com/api/v1/dalle',
         { prompt },
         {            
           responseType: 'blob',
