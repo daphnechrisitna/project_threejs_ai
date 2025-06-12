@@ -58,7 +58,8 @@ const Customizer = () => {
       setGeneratingImg(true);
 
       const response = await axios.post('https://shirt-design-ehnm.onrender.com/api/v1/dalle',
-        { prompt },
+        {method: 'POST',
+         prompt },
         {            
           responseType: 'blob',
         });
